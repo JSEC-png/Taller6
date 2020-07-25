@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel ="stylesheet" href="registro.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <form>
+
+        <h1>Registro de usuario</h1>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Digite su nombre">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Digite su apellido">
+            </div>
+        </div>
+
+
+        <div class="form-row align-items-left">
+            <div class="form-group col-auto">
+                <label for="fechaNacimiento">Fecha de nacimiento</label>
+                <input type="date" id="fechaNacimiento" min="1899-01-01">                
+            </div>
+
+            <div class="form-group col-auto">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" disabled>              
+            </div>            
+
+        </div>
+
+        <div class="form-group row align-items-left">
+            <label for="inputEmail3" class="col-sm-1 col-form-label">Email</label>
+            <div class="col-sm-10 col-auto">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Digite su email">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="usuario">Usuario</label>
+            <input type="text" class="form-control" id="usuario" placeholder="Digite su usuario">
+        </div>
+
+        <div class="form-group">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" class="form-control" id="contrasena" placeholder="Digite una contraseña">
+        </div>
+
+        <div class="form-group">
+            <label for="confirmacion">Confirme su contraseña</label>
+            <input type="password" class="form-control" id="confirmacion" placeholder="Confirme la contraseña">
+        </div>
+
+        <div class="form-group">
+            <label for="confirmacion">¿Ha sufrido enfermedades?</label>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Si</label>
+            </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+            </div>
+        </div>                                                    
+    </form>
+
+    <div class="form-group">
+        <label>¿Las enfermedades que ha sufrido son contagiosas?</label>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Si</label>
+        </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">No</label>
+        </div>
+    </div>  
+    
+    <div class="form-group">
+        <label for="cuales">¿Cuales?</label>
+
+        <textarea class="form-control" id="cuales">
+        </textarea>    
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary">Registrarse</button>
+    </div>
+
+</form>
+
+
+
+    
+</body>
+</html>
