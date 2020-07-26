@@ -9,7 +9,6 @@ function (data) {
     }
 ); */
 
-
 $.ajax({
     type: "GET",
     url: "https://jsonplaceholder.typicode.com/users",
@@ -23,9 +22,9 @@ $.ajax({
 
 
            tabla.append(
-               `<tr>\
+               `<tr>
                <td> ${indice.id} </td>
-               <td>${indice.name}</td>
+               <td class='nombre'>${indice.name}</td>
                <td>${indice.username}</td>
                <td>${indice.email}</td>
                <td>${indice.address.street}</td>
@@ -55,11 +54,19 @@ $('#fnombre').click(function () {
 });
 
 $('#filtronombre').keyup(function () { 
-    
-    console.log(filtronombre.html());
-    
-    $('td').hide();
-
+    var filtro = $('td.nombre');
+    var fil= filtronombre.val();
+    var f = $('tr');
+    for (i=0;i<filtro.length;i++){
+    var iltro= filtro[i].innerHTML;
+    var test = iltro.match(fil);
+    var row = f[i+3];
+    if (test !=null){
+        row.style.visibility='visible';
+    } else {   
+        row.style.visibility='collapse';
+    }
+}
 });
 
 });
