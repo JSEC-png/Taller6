@@ -6,6 +6,8 @@ align-items: center;
 body{
 margin: 2px;
 padding-left: 3px;
+border-color: black;
+border-width: 10px;
 }
 
 table{
@@ -40,3 +42,7 @@ a.btn {
     font-size: 18px;   
 
 }
+
+
+
+

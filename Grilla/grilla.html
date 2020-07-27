@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="grilla.css">
   </head>
 <body>
     
   
 
-  <table  id="datos">
+  <table  id="datos" >
 
 <tr>
   <th rowspan="3"> ID</th>
@@ -45,14 +45,11 @@
 </div>
 <div id="filtros">
 
-  Filtrar por:<br>
-  <input type="radio" id="fid" name="filtro" value="id">
-  <label for="fid">ID</label><br>
-  <input type="radio" id="fnombre" name="filtro" value="nombre">
-  <label for="fnombre" id="lnombre">NAME</label>
+  Filtrar por nombre (Este filtro es sensible a mayúsculas y minúsculas):<br>
+  
+  <label for="fnombre" id="lnombre"></label>
   <input type="text" id="filtronombre"><br> 
-  <input type="radio" id="fusername" name="filtro" value="username">
-  <label for="fusername">USERNAME</label>
+  
 </div>
 <div >
 

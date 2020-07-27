@@ -44,11 +44,8 @@ $.ajax({
          };
     }
 });
-filtronombre = $('#filtronombre');
-$('input[type=radio][name=filtro]').focus(function () { 
-    filtronombre.toggle();
-  
-});
+ filtronombre = $('#filtronombre');
+
 $('#filtronombre').keyup(function () { 
     var filtro = $('td.nombre');
     var fil= filtronombre.val();

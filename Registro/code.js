@@ -64,11 +64,11 @@ $('#confirmacion').change(function () {
     if (x == y)
     {
         val3=true;
-        $('#pconfirmacion').html('Contraseña coinciden');
+        $('#pconfirmacion').html('Contraseñas coinciden');
     }else 
     {
         val3=false;
-        $('#pconfirmacion').html('Las constraseñas no coinciden');
+        $('#pconfirmacion').html('Las contraseñas no coinciden');
     }
     
 });
