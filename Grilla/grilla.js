@@ -44,15 +44,11 @@ $.ajax({
          };
     }
 });
-
 filtronombre = $('#filtronombre');
-
-$('#fnombre').click(function () { 
-
+$('input[type=radio][name=filtro]').focus(function () { 
     filtronombre.toggle();
-   
+  
 });
-
 $('#filtronombre').keyup(function () { 
     var filtro = $('td.nombre');
     var fil= filtronombre.val();
@@ -68,5 +64,4 @@ $('#filtronombre').keyup(function () {
     }
 }
 });
-
 });
